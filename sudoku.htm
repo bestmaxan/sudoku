@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sudoku</title>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/sudoku.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/sudoku-1.0-maxan.js"></script>
+</head>
+<body>
+<div align="center">
+    <div id="mainTable">
+        <div class="container">
+            <div class="row">
+                <div id="c0_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c0_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c0_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c1_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c1_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c1_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c2_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c2_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c2_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c0_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c0_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c0_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c1_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c1_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c1_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c2_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c2_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c2_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c0_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c0_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c0_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c1_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c1_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c1_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c2_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c2_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c2_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c3_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c3_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c3_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c4_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c4_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c4_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c5_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c5_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c5_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c3_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c3_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c3_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c4_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c4_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c4_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c5_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c5_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c5_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c3_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c3_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c3_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c4_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c4_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c4_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c5_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c5_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c5_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c6_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c6_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c6_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c7_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c7_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c7_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c8_0" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c8_1" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c8_2" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c6_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c6_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c6_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c7_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c7_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c7_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c8_3" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c8_4" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c8_5" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="c6_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c6_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c6_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c7_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c7_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c7_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="c8_6" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c8_7" class="col-md-1">
+                    <span></span>
+                </div>
+                <div id="c8_8" class="col-md-1">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navMenu">
+        <button id="hintBtn" type="button" class="btn btn-primary">
+            Hint</button>
+        <button id="restartBtn" type="button" class="btn btn-primary">
+            Restart</button>
+        <button data-level="0" type="button" class="btn btn-success newGame">
+            Easy</button>
+        <button data-level="1" type="button" class="btn btn-warning newGame">
+            Medium</button>
+        <button data-level="2" type="button" class="btn btn-danger newGame">
+            Hard</button>
+    </div>
+    <div>
+        <b>Maxan ©</b>
+    </div>
+    </div>
+</body>
+</html>
