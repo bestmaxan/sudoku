@@ -1,0 +1,65 @@
+#mainTable
+{
+    width: 550px;
+    height: 550px;
+    font-family: helvetica;
+    font-size: 23px;
+    border: 2px solid black;
+}
+.col-md-1
+{
+    width: 33.334%;
+    height: 60px;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+    border: 1px dashed gray;
+    position: relative;
+    cursor: pointer;
+    float: left;
+}
+.col-md-1 span
+{
+    position: absolute;
+    top: 25%;
+    left: 40%;    
+}
+.row
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.col-md-1:hover
+{
+    background-color: #E8E8E8;
+}
+.container
+{
+    width: 33.334%;
+    height: 33.334%;
+    float: left;
+    border: 1px solid gray;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#navMenu
+{
+    padding-top: 20px;
+}
+.clickedCell, .clickedCell:hover
+{
+    background-color: #C6FFA9;
+}
+.wrongCell
+{
+    background-color: #FF9E9E !important;
+}
+.correctCell
+{
+    background-color: #C6FFA9;
+}
+.orgCell
+{
+    cursor: default !important;
+    background-color: #F6F6F9;
+}
