@@ -1,7 +1,6 @@
 /**
 *
 * @Author Max An
-* @Email bestmaxan@gmail.com
 * @Date  February 7 
 *
 * sudoku on jQuery
