@@ -1,6 +1,6 @@
 /**
 *
-* @Author Max An
+* @Author Max
 * @Date  February 7 
 *
 * sudoku on jQuery
